@@ -7,6 +7,8 @@ How to use:
 3. Copy code from 'copy_from_here' file and insert into each console.
 4. Run & Enjoy.
 
+For more, see 5min video-overview: https://youtu.be/BUYkYj16s3k
+
 if bugs - restart.
 
 p.s.
