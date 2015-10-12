@@ -1,13 +1,13 @@
-Simple 'MITM' script for transfering messages between tabs at http://chatvdvoem.ru
+Simple 'MITM' script for transferring messages between tabs @ http://chatvdvoem.ru
 Only Firefox!
 
 How to use:
 1. Open and start two different chatrooms. Then disconnect by clicking 'Отключиться'.
-2. Open console at each tab. Use 'Ctrl+Shift+K' combination.
+2. Open console at the each tab. Use 'Ctrl+Shift+K' combination.
 3. Copy code from 'copy_from_here' file and insert into each console.
 4. Run & Enjoy.
 
-For more, see 5min video-overview: https://youtu.be/BUYkYj16s3k
+For more, see video-overview: https://youtu.be/BUYkYj16s3k (5 min)
 
 if bugs - restart.
 
