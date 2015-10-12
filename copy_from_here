@@ -1,0 +1,55 @@
+window.addEventListener('storage', function(){
+	var fM = localStorage.getItem('freshMessage');
+	var n = document.getElementById("text");
+	var h = document.getElementById("text_send");
+	if (fM.length == 20 && fM.slice(0, -5) == '3%Xl}:3xN._3=!+') {
+		clearInterval(time);
+		time = null;
+		z = null;
+		closeCurrentChat();
+		setTimeout(function() { document.querySelector(".btn").click(); setTimeout(function() { f(); }, 400)}, 1000);
+	}
+	else {
+		if (fM.length <= 9){
+			n.value = fM;
+			h.click();
+		}
+		else {
+			if (fM.substring(fM.length - 9) == "~|№*.92H_"){
+				n.value = fM.slice(0, -9);
+				h.click();
+			}
+			else{
+				n.value = fM;
+				h.click();
+			}
+		}
+	}
+});
+var z = null;
+var time = null;
+function f(){
+	time = setInterval(function(){
+		if(!document.getElementsByClassName('disconnected')[0]){
+			var a = document.getElementsByTagName("ol")[0].getElementsByTagName("li");
+			if(a.length > z && a[a.length-1].className == "messageFrom"){
+				z = a.length;
+				var w = document.getElementsByClassName('messageFrom');
+				if (localStorage.getItem('freshMessage') == w[w.length-1].getElementsByTagName("span")[0].textContent){
+					localStorage.setItem('freshMessage', w[w.length-1].getElementsByTagName("span")[0].textContent + '~|№*.92H_');
+				}
+				else {
+					localStorage.setItem('freshMessage', w[w.length-1].getElementsByTagName("span")[0].textContent);
+				}
+			}
+		}
+		else {
+			clearInterval(time);
+			z = null;
+			localStorage.setItem('freshMessage', '3%Xl}:3xN._3=!+' + Math.random().toString().substr(-5) );
+			closeCurrentChat();
+			setTimeout(function() { document.querySelector(".btn").click(); setTimeout(function() { f(); }, 400)}, 1000);
+		}
+	}, 200);
+}
+f();
