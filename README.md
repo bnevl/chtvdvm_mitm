@@ -13,5 +13,4 @@ if bugs - restart.
 
 p.s.
 
-[en]: To break connection between tabs on fly you need insert string 'clearInterval(time);' into any of consoles.
-[ru]: В консоль вкладки, сессию которой предстоит завершить вручную без влияния на соседнюю, перед нажатием на 'Отключиться', следует без кавычек ввести 'clearInterval(time);'
+[en]: To break effects from one tab to another you need insert string 'clearInterval(time);' into console at side from which you want stop that. [ru]: В консоль вкладки, сессию которой предстоит завершить вручную без влияния на соседнюю, перед нажатием на 'Отключиться', следует без кавычек ввести 'clearInterval(time);'
